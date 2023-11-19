@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Otis kit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Otis kit PRO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-file"></i>
+                                Pages</a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-receipt"></i> Account
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" data-bs-toggle="modal"
+                                        data-bs-target="#loginModal">Login</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+                                        Up</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Reset Password</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-object-group"></i> Section
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Pages</a></li>
+                                <li><a class="dropdown-item" href="#">Navigation</a></li>
+
+                                <li><a class="dropdown-item" href="#">Input area</a></li>
+                                <li><a class="dropdown-item" href="#">Attention Catchers</a></li>
+                                <li><a class="dropdown-item" href="#">Elements</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-file-lines"></i></i> Docs
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Getting Started</a></li>
+                                <li><a class="dropdown-item" href="#">Foundation</a></li>
+                                <li><a class="dropdown-item" href="#">Components</a></li>
+                                <li><a class="dropdown-item" href="#">Plugins</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- <button class="btn btn-outline-success" type="submit">Buy Now</button> -->
+
+                </div>
+                <button class="btn btn-outline-primary" type="submit">Buy Now</button>
+            </div>
+        </nav>
+        <section class="one-section">
+            <div class="main-heading">
+                <h2>
+                    Otis Kit PRO
+                </h2>
+                <p><span id="main-span">Start the Development with a ReactJS & MUI Design System inspired by Material
+                        Design.</span></p>
+            </div>
+        </section>
+
+        <!-- login modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="loginModalLabel">Login to iCoder</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">i Accept terms & conditions</label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--login modal ends here  -->
+        <!--signup Modal -->
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="signupModalLabel">Get an iCoder account</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="cexampleInputPassword1">
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Create Acoount</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- sign up modal end here -->
+    </header>
+
+    <main class="main-after-header">
+        <div class="design-block" style="margin-left: 5rem; margin-right: 5rem;">
+            <div id="one-block">
+                <h2 class="design-block-h2">
+                    300+
+                </h2>
+                <span class="design-block-span">Coded Elements</span>
+                <p class="design-block-para">From buttons, to inputs, navbars, alerts or cards, you are covered</p>
+            </div>
+
+
+            <div id="two-block">
+                <h2 class="design-block-h2">
+                    100+
+                </h2>
+                <span class="design-block-span">Design Blocks</span>
+                <p class="design-block-para">Mix the sections, change the colors and unleash your creativity</p>
+            </div>
+
+
+            <div id="three-block">
+                <h2 class="design-block-h2">
+                    41
+                </h2>
+                <span class="design-block-span">Pages</span>
+                <p class="design-block-para">Save 3-4 weeks of work when you use our pre-made pages for your website</p>
+            </div>
+        </div>
+        <div class="main-div-1">
+            <!-- <div class="card text-bg-dark -bg-primary">
+                <img src="/images/rotating img.jpeg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h2 class="card-title">Feel the <br>
+                Material Click
+                </h2>
+                  <p class="card-text">
+                    All the MUI components that you need in a development have been re-design with the new look.</p>
+                  <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                </div>
+              </div> -->
+            <div class="material-kit">
+                <h2 class="material-kit-h2">
+                    Feel the
+                    <br>
+                    Material Click
+                </h2>
+                <p>
+                    All the MUI components that you need in a development have been re-design with the new look.
+                </p>
+
+            </div>
+            <div class="card-grid">
+                <div class="grid-1">
+                    <i class="fa-regular fa-copy" style="color: #2e53e6;"></i>
+                    <h2>
+                        Full Documentation
+                    </h2>
+                    <p>Built by developers for developers. Check the foundation and you will find everything inside our
+                        documentation.</p>
+                </div>
+                <div class="grid-1">
+                    <i class="fa-regular fa-clone" style="color: #2e53e6;"></i>
+                    <h2>
+                        MUI Ready
+                    </h2>
+                    <p>The world's most popular react components library for building user interfaces.
+
+                    </p>
+                </div>
+                <div class="grid-1">
+                    <i class="fa-solid fa-wallet" style="color: #2e53e6;"></i>
+                    <h2>Save Time & Money</h2>
+                    <p>Creating your design from scratch with dedicated designers can be very expensive. Start with our
+                        Design System.</p>
+                </div>
+                <div class="grid-1">
+                    <i class="fa-solid fa-laptop-code" style="color: #2e53e6;"></i>
+                    <h2>Fully Responsive</h2>
+                    <p>Regardless of the screen size, the website content will naturally fit the given resolution.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="two-section">
+
+            <div class="section-2-div-1">
+                <span class="section-2-span">INFINITE COMBINATIONS</span>
+                <h2 class="section-2-h2">Huge collection of sections</h2>
+                <p class="section-2-para">We have created multiple options for you to put together and customise into
+                    pixel perfect pages.</p>
+            </div>
+            <div class="section2-parent-div d-flex ">
+
+                <div class="section2-left-div">
+                    <h2>DESIGN BLOCK</h2>
+                    <span>A selection of 45 page sections that fit perfectly in any combination</span>
+                </div>
+                <div class="row mb-3 text-center">
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/grid-img-1.jpg" alt="">
+                            <h2 class="text-center-h2">Page Header</h2>
+                        </a></div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/grid-img-2.jpg" alt="">
+                            <h2 class="text-center-h2">Features</h2>
+                        </a></div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/grid-img-3.jpg" alt="">
+                            <h2 class="text-center-h2">Pricing</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/grid-img-4.jpg" alt="">
+                            <h2 class="text-center-h2">FAQ</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/grid-img-5.jpg" alt="">
+                            <h2 class="text-center-h2">Blog Post</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/grid-img-6.jpg" alt="">
+                            <h2 class="text-center-h2">Testimonials</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/grid-img-7.jpg" alt="">
+                            <h2 class="text-center-h2">Teams</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/grid-img-8.jpg" alt="">
+                            <h2 class="text-center-h2">Stats</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/grid-img-9.jpg" alt="">
+                            <h2 class="text-center-h2">Call To Action</h2>
+                        </a>
+                    </div>
+
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/grid-img-10.jpg" alt="">
+                            <h2 class="text-center-h2">Applications</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/grid-img-11.jpg" alt="">
+                            <h2 class="text-center-h2">Logo Areas</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/grid-img-12.jpg" alt="">
+                            <h2 class="text-center-h2">Footers </h2>
+                        </a>
+                    </div>
+
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/grid-img-13.jpg" alt="">
+                            <h2 class="text-center-h2">General Cards</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/grid-img-14.jpg" alt="">
+                            <h2 class="text-center-h2">Content Section</h2>
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </section>
+        <section class="three-section">
+            <div class="section2-parent-div d-flex">
+
+                <div class="section3-left-div">
+                    <h2>Navigation</h2>
+                    <span class="section3-left-div-span">30+ components that will help go through the pages</span>
+                </div>
+
+                <div class="row mb-3 text-center">
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section 3 img1.jpg" alt="">
+                            <h2 class="text-center-h2">Navbars</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section 3 img2.jpg" alt="">
+                            <h2 class="text-center-h2">Nav Tabs</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section 3 img3.jpg" alt="">
+                            <h2 class="text-center-h2">Pagination</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="four-section">
+            <div class="section2-parent-div d-flex">
+
+                <div class="section3-left-div">
+                    <h2>Input Areas</h2>
+                    <span class="section3-left-div-span">50+ elements that you need for text manipulation and
+                        insertion</span>
+                </div>
+
+                <div class="row mb-3 text-center">
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section4 img-1.jpg" alt="">
+                            <h2 class="text-center-h2">Newsletters</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section4 img-2.jpg" alt="">
+                            <h2 class="text-center-h2">Contact Sections</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section4 img-3.jpg" alt="">
+                            <h2 class="text-center-h2">Forms</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section4 img-4.jpg" alt="">
+                            <h2 class="text-center-h2">Input</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="five-section">
+            <div class="section2-parent-div d-flex">
+
+                <div class="section3-left-div">
+                    <h2>Attention Catchers</h2>
+                    <span class="section3-left-div-span">20+ Fully coded components that popup from different places of
+                        the screen</span>
+                </div>
+
+                <div class="row mb-3 text-center">
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section5 img-1.jpg" alt="">
+                            <h2 class="text-center-h2">Alerts</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section5 img-2.jpg" alt="">
+                            <h2 class="text-center-h2">Notifications</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section5 img-3.jpg" alt="">
+                            <h2 class="text-center-h2">Tooltips & Popovers</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section5 img-4.jpg" alt="">
+                            <h2 class="text-center-h2">Modals</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="six-section">
+            <div class="section2-parent-div d-flex ">
+
+                <div class="section2-left-div">
+                    <h2>Elements</h2>
+                    <span>80+ carefully crafted small elements that come with multiple colors and shapes</span>
+                </div>
+                <div class="row mb-3 text-center">
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section6 img-1.jpg" alt="">
+                            <h2 class="text-center-h2">Buttons</h2>
+                        </a></div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section6 img-2.jpg" alt="">
+                            <h2 class="text-center-h2">Avatars</h2>
+                        </a></div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section6 img-3.jpg" alt="">
+                            <h2 class="text-center-h2">Dropdowns</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section6 img-4.jpg" alt="">
+                            <h2 class="text-center-h2">Toggles</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section6 img-5.jpg" alt="">
+                            <h2 class="text-center-h2">Social Buttons</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section6 img-6.jpg" alt="">
+                            <h2 class="text-center-h2">Breadcrumbs</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section6 img-7.jpg" alt="">
+                            <h2 class="text-center-h2">Badges</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section6 img-8.jpg" alt="">
+                            <h2 class="text-center-h2">Progress Bars</h2>
+                        </a>
+                    </div>
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section6 img-9.jpg" alt="">
+                            <h2 class="text-center-h2">Tables</h2>
+                        </a>
+                    </div>
+
+                    <div class="col-4 themed-grid-col"><a href="#" class="anchor"><img class="img-thumbnail"
+                                src="/images/section6 img-10.jpg" alt="">
+                            <h2 class="text-center-h2">Typography</h2>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="account-section">
+            <div class="action-section-heading">
+            <span class="acc-span">BOOST CREATIVITY</span>
+            <h2>With our coded pages</h2>
+            <p>The easiest way to get started is to use one of our
+                pre-built example pages.</p>
+            </div>
+
+            <div class="parent-div-boost-creativity">
+                    <div class="row mb-3 text-center">
+                        <div class="col-4 themed-grid-col"><img class="img-thumbnail" src="/images/boost creativity img-1.jpg" alt=""><h2 class="text-center-h2">Coworking Page</h2></div>
+                        <div class="col-4 themed-grid-col"><img  class="img-thumbnail" src="/images/boost creativity img-2.jpg" alt=""><h2 class="text-center-h2">Rental Page</h2></div>
+                        <div class="col-4 themed-grid-col"><img class="img-thumbnail" src="/images/boost creativity img-3.jpg" alt=""><h2 class="text-center-h2">About Us Page</h2></div>
+
+                        
+                        <div class="col-4 themed-grid-col"><img class="img-thumbnail" src="/images/boost creativity img-4.jpg" alt=""><h2 class="text-center-h2">Pricing Page </h2></div>
+                        <div class="col-4 themed-grid-col"><img class="img-thumbnail" src="/images/boost creativity img-5.jpg" alt=""><h2 class="text-center-h2">Help Center</h2></div>
+                        <div class="col-4 themed-grid-col"><img class="img-thumbnail" src="/images/boost creativity img-6.jpg" alt=""><h2 class="text-center-h2">Contact Us Page</h2></div>
+
+                        
+                        <div class="col-4 themed-grid-col"><img class="img-thumbnail" src="/images/boost creativity img-7.jpg" alt=""><h2 class="text-center-h2">FAQ Page</h2></div>
+                        <div class="col-4 themed-grid-col"><img class="img-thumbnail" src="/images/boost creativity img-8.jpg" alt=""><h2 class="text-center-h2">Privacy Page</h2></div>
+                        <div class="col-4 themed-grid-col"><img class="img-thumbnail" src="/images/boost creativity img-9.jpg" alt=""><h2 class="text-center-h2">Desktop App Page</h2></div>
+
+                        
+                        <div class="col-4 themed-grid-col"><img class="img-thumbnail" src="/images/boost creativity img-10.jpg" alt=""><h2 class="text-center-h2">Single Article Blog</h2></div>
+                        <div class="col-4 themed-grid-col"><img class="img-thumbnail" src="/images/boost creativity img-11.jpg" alt=""><h2 class="text-center-h2">Author Blog Page</h2></div>
+                        <div class="col-4 themed-grid-col"><img class="img-thumbnail" src="/images/boost creativity img-12.jpg" alt=""><h2 class="text-center-h2">Virtual Reality</h2></div>
+                      </div>
+
+                      <div class="right-div-boost-creativity">
+                        <h2>Presentation Pages for Company, Landing Pages, Blogs and Support</h2>
+                        <span class="right-div-boost-creativity-span">These is just a small selection of the multiple possibitilies you have. Focus on the business, not on the design.</span>
+                      </div>
+
+                      
+                </div>
+        </section>
+
+
+        <section class="eight-section">
+            <div class="developers-div">
+                <div class="developers-div-data">
+                    <h2>Built by developers <br>
+                    Complex Documentation</h2> </div>
+                <div class="span-developers-div">
+                    <span>From colors, cards, typography to complex elements, you will find the full documentation. Play with the utility classes and you will create unlimited combinations for our components. <br>
+                </span>
+                <a href="#" style="text-decoration: none;" >Read More. <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            </div>
+        </section>
+
+        <section class="nine-section">
+            <div class="parent-div-nine-section d-flex justify-content-around my-4">
+                <div class="developers-section-part-1">
+                    <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+                    
+                    <div class="card-body">
+                      <h5 class="card-title">Getting Started</h5>
+                      <p class="card-text">Check the possible ways of working with our product and the necessary files for building your own project.</p>
+                      <a href="#" style="text-decoration: none;"  class="card-body-anc">Read More.<i class="fa-solid fa-arrow-right"></i></a>
+
+                    </div>
+                    </div>
+                  </div>
+                  <div class="developers-section-part-1">
+                  <div class="card text-bg-light mb-3" style="max-width: 18rem;">
+                    
+                    <div class="card-body">
+                      <h5 class="card-title">Plugins</h5>
+                      <p class="card-text">Get inspiration and have an overview about the plugins that we used to create the Material Kit.</p>
+                      <a href="#" style="text-decoration: none;" class="card-body-anc-2" >Read More.  <i class="fa-solid fa-arrow-right"></i></a>
+
+                    </div>
+                    </div> 
+                </div>
+
+                <div class="developers-section-part-1">
+                    <div class="card text-bg-light mb-3" style="max-width: 18rem;">
+                      
+                      <div class="card-body">
+                        <h5 class="card-title">Components</h5>
+                        <p class="card-text">Otis Kit PRO is giving you a lot of pre-made components, that will help you to build UI's faster.</p>
+                        <a href="#" style="text-decoration: none;" class="card-body-anc-2" >Read More. <i class="fa-solid fa-arrow-right"></i></a>
+  
+                      </div>
+                      </div> 
+                  </div>
+
+
+            </div>
+        </section>
+
+        <section class="ten-section">
+            <div class="trust-section-heading">
+                
+                <h2>Trusted by over</h2>
+                   <span class="trust-h2-span"> 1,679,477+ web developers </span><br>
+                
+                <span class="trust-para-span">Many Fortune 500 companies, startups, universities and governmental <br>
+                     institutions love Creative Tim's products.</span>
+                </div>
+
+                <div class="parent-div-ten-section d-flex justify-content-around my-4">
+                    <div class="trust-section-part-1  my-2">
+                        <div class="card text-bg-transparent mb-3 border-0" style="max-width: 22rem;">
+                        
+                        <div class="card-body">
+                          <h5 class="card-title my-2">Nick Willever <br>
+                            <i class="fa-regular fa-clock my-2"></i> 1 day ago</h5>
+                          <p class="card-text my-2  my-2">"This is an excellent product, the documentation is excellent and helped me get things done more efficiently."
+
+                          </p>
+                          <div>
+                            <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
+                          </div>
+    
+                        </div>
+                        </div>
+                      </div>
+                      <div class="trust-section-part-1  my-2">
+                      <div class="card text-bg-primary mb-3 border-0" style="max-width: 22rem;">
+                        
+                        <div class="card-body">
+                          <h5 class="card-title my-2">Shailesh Kushwaha <br>
+                            <i class="fa-regular fa-clock  my-2"></i> 1 week ago
+                          </h5>
+                          <p class="card-text my-2">"I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"</p>
+                          <div>
+                            <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
+                          </div>
+    
+                        </div>
+                        </div> 
+                    </div>
+    
+                    <div class="trust-section-part-1  my-2">
+                        <div class="card text-bg-transparent mb-3 border-0" style="max-width: 22rem;">
+                          
+                          <div class="card-body">
+                            <h5 class="card-title my-2">Samuel Kamuli <br>
+                                <i class="fa-regular fa-clock  my-2"></i>  3 weeks ago
+                            </h5>
+                            <p class="card-text my-2">"Great product. Helped me cut the time to set up a site. I used the components within instead of starting from scratch. I highly recommend for developers who want to spend more time on the backend!."</p>
+                            <div>
+                                <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
+                              </div>
+      
+                          </div>
+                          </div> 
+                      </div>
+    
+    
+                </div>
+
+                <hr>
+                <div class="logo-section d-flex">
+                    <div><img src="/images/apple logo.svg" alt="" class="app-logos"></div>
+                    <div><img src="/images/facebook logo.svg" alt="" class="app-logos"></div>
+                    <div><img src="/images/nasa logo.svg" alt="" class="app-logos"></div>
+                    <div><img src="/images/vodafone.svg" alt="" class="app-logos"></div>
+                    <div><img src="/images/digital ocean.svg" alt="" class="app-logos"></div>
+                </div>
+        </section>
+        <section class="section-eleven">
+            <div class="pricing-div">
+                <span class="pricing-div-span">Pricing</span>
+                <h2 class="pricing-div-h2">Ready to get Material Kit?</h2>
+                <p class="pricing-div-p">Based on the license you get, you will have direct access to our team <br>
+                    of developers who built the product.</p>
+            </div>
+        </section>
+
+        <div class="monthly-payment">
+
+            <div class="card mb-4 rounded-3 shadow-sm"  style="width: 20%; ">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Freelancer</h4> <br>
+
+                  <span>Good for a personal or client web/mobile app</span>
+
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$79</h1>
+                  <button type="button" class="w-100 btn btn-lg btn btn-dark">BUY NOW</button>
+                  <hr>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li><i class="fa-solid fa-arrow-right"></i> Complete documentation</li>
+                    <li> <i class="fa-solid fa-arrow-right"></i> Full code</li>
+                    <li><i class="fa-solid fa-arrow-right"></i> Projects-1</li>
+                    <li><i class="fa-solid fa-arrow-right"></i> Team Size-1</li>
+                    <li><i class="fa-solid fa-arrow-right"></i> Support</li>
+                    <li><i class="fa-solid fa-arrow-right"></i> Free Updates-6 months</li>
+                  </ul>
+                  
+                </div>
+              </div>
+              <!--      end here -->
+
+              <div class="card mb-4 rounded-3 shadow-sm"  style="width: 20%; ">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Startup</h4> <br>
+
+                  <span>Build your startup or client web/mobile app</span>
+
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$149</h1>
+                  <button type="button" class="w-100 btn btn-lg btn-outline-black btn btn-dark">BUY NOW</button>
+                  <hr>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li><i class="fa-solid fa-arrow-right"></i> Complete documentation</li>
+                    <li> <i class="fa-solid fa-arrow-right"></i> Full code</li>
+                    <li><i class="fa-solid fa-arrow-right"></i> Projects-1</li>
+                    <li><i class="fa-solid fa-arrow-right"></i> Team Size-1</li>
+                    <li><i class="fa-solid fa-arrow-right"></i> Support</li>
+                    <li><i class="fa-solid fa-arrow-right"></i> Free Updates-6 months</li>
+                  </ul>
+                  
+                </div>
+                </div>
+                <!-- end here -->
+
+                <div class="card mb-4 rounded-3 shadow-sm bg-black"  style="width: 20%;color: white;" >
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Company</h4> <br>
+    
+                      <span>Perfect for web/mobile apps or SaaS projects.</span>
+    
+                    </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$249</h1>
+                    <button type="button" class="w-100 btn btn-lg btn-outline-black btn btn-light">BUY NOW</button>
+                    <hr>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li><i class="fa-solid fa-arrow-right"></i> Complete documentation</li>
+                      <li> <i class="fa-solid fa-arrow-right"></i> Full code</li>
+                      <li><i class="fa-solid fa-arrow-right"></i> Used in SaaS</li>
+                      <li><i class="fa-solid fa-arrow-right"></i>Projects-unlimited</li>
+                      <li><i class="fa-solid fa-arrow-right"></i> Team Size- up to 20</li>
+                      <li><i class="fa-solid fa-arrow-right"></i>Priority support</li>
+                      <li><i class="fa-solid fa-arrow-right"></i> Free Updates-12 months</li>
+                    </ul>
+                    
+                  </div>
+                  </div>
+                  <!-- end here -->
+
+                  <div class="card mb-4 rounded-3 shadow-sm"  style="width: 20%; ">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Enterprise</h4> <br>
+    
+                      <span>Deploy large-scale projects which include redistribution rights</span>
+    
+                    </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$599</h1>
+                    <button type="button" class="w-100 btn btn-lg btn-outline-black btn btn-dark">BUY NOW</button>
+                    <hr>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li><i class="fa-solid fa-arrow-right"></i> Complete documentation</li>
+                      <li> <i class="fa-solid fa-arrow-right"></i> Full code</li>
+                      <li><i class="fa-solid fa-arrow-right"></i> Used in SaaS</li>
+                      <li><i class="fa-solid fa-arrow-right"></i> Projects-unlimited</li>
+                      <li><i class="fa-solid fa-arrow-right"></i> Team Size- up to 20</li>
+                      <li><i class="fa-solid fa-arrow-right"></i> Priority Support</li>
+                      <li><i class="fa-solid fa-arrow-right"></i> Free Updates-24 months</li>
+                    </ul>
+                    
+                  </div>
+                  </div>
+                  <!-- end here -->
+              </div>
+
+
+        </div>
+
+        <div class="transfer-method">
+            <p style="color: gray;"><i class="fa-solid fa-lock"></i> Secured Payment by <span style="font-weight: bolder;">2Checkout</span> with: <br>
+                <i class="fa-brands fa-cc-paypal"></i> <i class="fa-brands fa-cc-visa"></i> <i class="fa-brands fa-cc-mastercard"></i> <i class="fa-brands fa-cc-amex"></i> </p>
+                <p style="color: gray;"> <span style="font-weight: bolder;">Info:</span>  If you are a Registered Company inside the European Union you will <br> be able to add your VAT ID after your Press "Buy Now"</p>
+        </div>
+
+        <div class="Applications-div d-flex justify-content-around">
+            <div><h2 style="color: rgb(29, 27, 27);">Thank you for your support!</h2>
+            <span style="font-size: 1.2rem; color: gray;">We deliver the best web products</span></div>
+            <div>
+                <button type="button" class="btn btn-primary"><i class="fa-brands fa-twitter"></i>TWEET</button>
+                <button type="button" class="btn btn-primary"><i class="fa-brands fa-facebook"></i>SHARE</button>
+                <button type="button" class="btn btn-danger"><i class="fa-brands fa-pinterest"></i>PIN-IT</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-main-div">
+            <div>
+                <ul>
+                    <li><img src="/images/footer img.png" alt="" style="width: 2rem;"></li>
+                    <li><h2>Otis Kit PRO</h2></li>
+                    <li><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-github"></i> <i class="fa-brands fa-youtube"></i> </li>
+                </ul>
+            </div>
+                
+            <div>
+                <ul>
+                    <li><h2>Company</h2></li>
+                    <li>About Us</li>
+                    <li>Freebies</li>
+                    <li>Premium</li>
+                    <li>Tools</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h2>Resources</h2></li>
+                    <li>Illustration</li>
+                    <li>Bits & Snippets</li>
+                    <li>Affiliate</li>
+                    <li>Program</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h2>Help & Support</h2></li>
+                    <li>Contact Us</li>
+                    <li>Knowledge</li>
+                    <li>Center</li>
+                    <li>Custom</li>
+                    <li>Development</li>
+                    <li>Sponsorships</li>
+                </ul>
+            </div>
+            <div>
+
+                <ul>
+                    <li><h2>Legal</h2></li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Licenses</li>
+                    <li>(EULA)</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

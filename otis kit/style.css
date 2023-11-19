@@ -1,0 +1,299 @@
+
+header::before{
+    background: url(/images/bg-img.jpg);
+    content: ""; /* Necessary for the pseudo-element to appear on the page */
+  position: absolute; /* Position the pseudo-element */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  z-index: -1; 
+}
+header{
+    margin: 0;
+    padding: 0;
+    /* height: 75vh; */
+    height: 46rem;
+}
+.container-fluid{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    /* margin-top: 2rem; */
+}
+.bg-body-tertiary{
+    margin-left: 4.5rem;
+    margin-top: 1rem;
+    width: 90%;
+    border-radius: 0.5rem;
+    background-color: #CCCDD1;
+}
+.navbar-nav-scroll{
+    /* --bs-scroll-height: 100px; */
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.main-heading{
+    color: white;
+    text-align: center;
+    margin-top: 18rem;
+}
+.main-heading>h2{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+#main-span{
+    font-size: 1rem;
+}
+.main-after-header{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: white;
+    margin-top: -19rem;
+    border-radius: 0.5rem;
+}
+.design-block{
+    display: flex;
+    margin-top: 2rem;
+}
+.design-block-h2{
+    color: #368FED;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+.design-block-span{
+    font-size: 1.3rem;
+}
+.design-block-para{
+    color: gray;
+    font-size: 1rem;
+}
+#one-block{
+    text-align:center;
+    width:44rem;
+}
+#two-block{
+    text-align:center;
+    width:44rem;
+}
+#three-block{
+    text-align:center;
+    width:44rem;
+}
+.material-kit{
+    background-color: #368FED;
+    color: white;
+    width: 26rem;
+    height: 26rem;
+    text-align: center;
+    opacity: 0.9;
+    margin-left: 1rem;
+    /* background:  linear-gradient(195deg, rgba(66, 66, 74, 0.8), rgba(25, 25, 25, 0.8)) center center / cover, url(/images/rotating\ img.jpeg); */
+    /* background: transparent; */
+    /* margin-top: 2rem; */
+}
+.material-kit::before{
+    /* background: url(/images/rotating\ img.jpeg); */
+    content: ""; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  
+  background-size: cover; 
+  background-position: center; 
+  z-index: -1; 
+
+  /* background:  linear-gradient(195deg, rgba(66, 66, 74, 0.8), rgba(25, 25, 25, 0.8)) center center / cover, url(/images/rotating\ img.jpeg); */
+}
+
+.main-div-1{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+.material-kit-h2{
+    margin-top: 6rem;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr); 
+    grid-gap: 4rem;
+    
+}
+.grid-1{
+    width: 19rem;
+    margin-left: 1rem;
+}
+.grid-1>p{
+    color: gray;
+}
+.section-2-div-1{
+    height: 8rem;
+    text-align: center;
+    margin-top: 4rem;
+    
+}
+.section-2-span{
+    background-color: #AECEF7;
+    color: #206dc0;
+}
+.text-center>a{
+    color: white;
+    text-decoration: none;
+}
+.img-thumbnail{
+    width: 36rem;
+}
+.section2-left-div{
+    margin: left 5rem;
+    width: 20%;
+    position: sticky;
+}
+.text-center{
+    width: 75%;
+    /* margin: 2rem; */
+}
+.anchor{
+    color: rgb(26, 24, 24);
+    text-decoration: none;
+}
+.text-center-h2{
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.section3-left-div{
+    width: 20%;
+}
+.section3-left-div-span{
+    width: 20%;
+    margin: left 5rem;
+}
+
+.acc-span{
+    background-color: #AECEF7;
+    color: #206dc0;
+    text-align: center;
+}
+.parent-div-boost-creativity{
+    display: flex;
+}
+.right-div-boost-creativity{
+    width: 20%;
+    margin-left: 1rem;
+
+}
+.action-section-heading{
+    height: 8rem;
+    text-align: center;
+    margin-top: 4rem;
+    
+}
+.right-div-boost-creativity>h2{
+    color: #344767;
+    line-height: 2.4rem;
+}
+.right-div-boost-creativity-span{
+    color: gray;
+    line-height: 1rem;
+}
+.developers-div{
+    height: 30rem;
+    width: 97%;
+    background:  linear-gradient(195deg, rgba(66, 66, 74, 0.8), rgba(25, 25, 25, 0.8)) center center / cover, url(/images/back-transparent.jpg);
+    border-radius: 1rem;
+    
+}
+.developers-div-data{
+    
+    margin: 1rem 1rem 1rem 1rem;
+    width: 18rem;
+    color: white;
+    padding: 1rem;
+
+}
+.span-developers-div{
+    color: whitesmoke;
+    margin: 1rem;
+    width: 26rem;
+    padding: 1rem;
+}
+.span-developers-div>a{
+    color: white;
+}
+.card-body-anc{
+    color: white;
+}
+.card-body-anc-2{
+    color: black;
+}
+.trust-h2-span{
+    color: #338CED;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.trust-section-heading{
+    height: 8rem;
+    text-align: center;
+    margin-top: 4rem;
+
+}
+.trust-p-span{
+color: gray;
+font-size: 1.2rem;
+}
+.app-logos{
+    width: 11rem;
+}
+.logo-section{
+    justify-content: space-around;
+    /* align-items: center; */
+    height: 10rem;
+}
+.pricing-div-h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+.pricing-div-span{
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    border-radius: 0.1rem;
+
+}
+.pricing-div{
+    background-color: rgb(24, 104, 179);
+    height: 20rem;
+    text-align: center;
+    padding: 1rem;
+}
+.pricing-div-p{
+    color: white;
+}
+.monthly-payment{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -8rem;
+}
+.transfer-method{
+    text-align: center;
+    height: 13rem;
+    margin-top: 2rem;
+}
+*{
+    list-style: none;
+}
+.footer-main-div{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-around;
+}
